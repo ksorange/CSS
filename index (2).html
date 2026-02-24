@@ -114,7 +114,6 @@
   .then(data => {
     let studentList = document.getElementById("student-data");
     
-    // Check if JSON contains 'students' array
     if (data.students && Array.isArray(data.students)) {
       data.students.forEach(student => {
         let listItem = document.createElement("li");
