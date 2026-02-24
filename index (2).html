@@ -1,4 +1,3 @@
-
 <!DOCTYPE html> 
 <html lang="en">  
 <head>
@@ -26,8 +25,8 @@
 <li><a href="#contact">Contact</a></li>
 </ul>
 
-
 </header> 
+
 <body> 
    
    <img src= "alone.png"> 
@@ -43,6 +42,7 @@
   <p id="para3" class="card-body"> I currently have basic skills og HTML, CSS, and JavaScript. </p>
   <p id="para4" class="card-body"> GitHub Repository: <a href = "https://github.com/ksorange/ksorange"> First Github Project </a></p>
 
+<!-- STUDENT LIST SECTION -->
 <div id="student-list">
   <h2>Student List</h2>
   <div id="student-data" class="card-body"></div>
@@ -52,6 +52,7 @@
 <p class="card-header">About</p>
 <p class="card-body"> I am scholar and student leader of student organizations, currently in the position of 2nd year gov. I work well under pressure and i am equipped with good social skills. I have multiple hobbies aside from my academic life such as drawing, singing, writing, and reading. I recently take interest of studying wild local weeds around my area.</p>
 </div>
+
 <div class="card" id="education">
 <p class="card-header"><h3> MY EDUCATION </h3> 
 </p>
@@ -65,6 +66,7 @@
     <p> University of Science and Technology of Southern Philippines- Lapasan, Cagayan de Oro City (2025-current) </p>
 </p>
 </div>
+
 <div class="card" id="skills">
 <p class="card-header">Skills</p>
 <p class="card-body"><ul>
@@ -77,6 +79,7 @@
       <li> Collaborative Work </li>
     </ul>
 </div>
+
 <div class="card" id="portfolio">
 <p class="card-header">Portfolio</p>
 <p class="card-body"> <h5> SAMPLE CODES </h5> 
@@ -85,23 +88,26 @@
          <li> Apprentice in SM Stationary: <a href = "https://drive.google.com/file/d/1UA8U2aYwSWA-7nC5i_TkLBE_kKMwoe2c/view"> Completion Certificate </a> </li>
         </p>
 </div>
+
 </div>
       
-     </div> 
-     <div id = "contact"> 
-       <h3> MY CONTACT </h3> 
-       <ul>
-  <li> Business Number: 09051405812 </li> 
- <li> Email: kylasabines@gmail.com </li>
-         <li> LinkedIn: <a href = "https://ph.linkedin.com/in/kyla-sabines-974250286"> Kyla Sabines </a> </li>
-      <li> Facebook: <a href = "https://web.facebook.com/hahahabacktoback/"> Kyla Sabines </a> </li>
-       </ul>
-     </div> 
+<div id = "contact"> 
+  <h3> MY CONTACT </h3> 
+  <ul>
+    <li> Business Number: 09051405812 </li> 
+    <li> Email: kylasabines@gmail.com </li>
+    <li> LinkedIn: <a href = "https://ph.linkedin.com/in/kyla-sabines-974250286"> Kyla Sabines </a> </li>
+    <li> Facebook: <a href = "https://web.facebook.com/hahahabacktoback/"> Kyla Sabines </a> </li>
+  </ul>
+</div> 
      
- <footer> 
+<footer> 
+  <p>For further questions and clarifications, kindly reach out via the indicated contact. I am excited and happy to entertain for future collaboration and work.</p> 
+</footer> 
 
-   <script>
-  // Replace with your JSON file URL
+<!-- ALL JAVASCRIPT AT THE BOTTOM BEFORE </body> -->
+<script>
+  // Fetch and display student data from JSON
   const jsonURL = "https://ksorange.github.io/students.json";
 
   fetch(jsonURL)
@@ -122,20 +128,18 @@
   })
   .catch(error => console.error("Error fetching JSON:", error));
 </script>
-   
-   <p>For further questions and clarifications, kindly reach out via the indicated contact. I am excited and happy to entertain for future collaboration and work.</p> 
-     </footer> 
-   <script>
-    alert("Hellow World! I am an alert box.");
-    const paragraph1 = document.getElementById("para1")
-    const paragraph2 = document.getElementById("para2")
-     const paragraph3 = document.getElementById("para3")
-     const paragraph4 = document.getElementById("para4")
-    console.log(paragraph1);
-    console.log(paragraph2);
-     console.log(paragraph3);
-     console.log(paragraph4);
- </script>
+
+<script>
+  // Log paragraphs to console
+  const paragraph1 = document.getElementById("para1")
+  const paragraph2 = document.getElementById("para2")
+  const paragraph3 = document.getElementById("para3")
+  const paragraph4 = document.getElementById("para4")
+  console.log(paragraph1);
+  console.log(paragraph2);
+  console.log(paragraph3);
+  console.log(paragraph4);
+</script>
   
-     </body> 
-  </html> 
+</body> 
+</html>
