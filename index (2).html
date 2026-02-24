@@ -105,13 +105,12 @@
   <p>For further questions and clarifications, kindly reach out via the indicated contact. I am excited and happy to entertain for future collaboration and work.</p> 
 </footer> 
 
-<!-- ALL JAVASCRIPT AT THE BOTTOM BEFORE </body> -->
+
 <script>
-  // Fetch and display student data from JSON
   const jsonURL = "https://github.com/ksorange/CSS/blob/main/students.json";
 
   fetch(jsonURL)
-  .then(response => response.json()) // Convert response to JSON
+  .then(response => response.json())
   .then(data => {
     let studentList = document.getElementById("student-data");
     
@@ -130,7 +129,6 @@
 </script>
 
 <script>
-  // Log paragraphs to console
   const paragraph1 = document.getElementById("para1")
   const paragraph2 = document.getElementById("para2")
   const paragraph3 = document.getElementById("para3")
